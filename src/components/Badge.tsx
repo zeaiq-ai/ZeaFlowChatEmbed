@@ -49,7 +49,7 @@ export const Badge = (props: Props) => {
           }}
         >
           {props.footer?.text ?? 'Powered by'}
-          <a
+          {/* <a
             ref={liteBadge}
             href={props.footer?.companyLink ?? 'https://zealogics.com'}
             target="_blank"
@@ -59,7 +59,7 @@ export const Badge = (props: Props) => {
             style={{ 'font-weight': 'bold', color: props.footer?.textColor ?? props.poweredByTextColor ?? defaultTextColor }}
           >
             <span>&nbsp;{props.footer?.company ?? 'ZeaIQ'}</span>
-          </a>
+          </a> */}
         </span>
       </Show>
       <Show when={props.footer?.showFooter === false}>
